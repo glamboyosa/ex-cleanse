@@ -4,6 +4,7 @@
   "description": "A utility that cleans up logs in your Elixir application.",
   "version": "1.0.0",
   "publisher": "glamboyosa",
+  "license": "MIT",
   "repository": {
     "type": "git",
     "url": "https://github.com/glamboyosa/ex-cleanse.git"
