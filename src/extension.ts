@@ -47,7 +47,13 @@ export function activate(context: vscode.ExtensionContext) {
     if (existing) {
       const existingArray: string[] = JSON.parse(existing);
       const endOfRegex = existingArray.join("|");
-      const regex = RegExp(`IO.(puts|inspect)|${endOfRegex}?`, "g");
+      // regex for matching any possible value between parenthesis gotten from
+      // https://stackoverflow.com/questions/546433/regular-expression-to-match-balanced-parentheses :)
+
+      const regex = RegExp(
+        `IO.(puts(\(.*\))|inspect(\(.*\)))|${endOfRegex}(\(.*\))?`,
+        "g"
+      );
       let logs: vscode.Range[] = [];
       let match;
       while ((match = regex.exec(text)) !== null) {
@@ -64,7 +70,7 @@ export function activate(context: vscode.ExtensionContext) {
       }
       return logs;
     } else {
-      const regex = RegExp("IO.(puts|inspect)?", "g");
+      const regex = RegExp("IO.(puts((.*))|inspect((.*)))?", "g");
       let logs: vscode.Range[] = [];
       let match;
       while ((match = regex.exec(text)) !== null) {
