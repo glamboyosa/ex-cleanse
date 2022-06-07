@@ -6,6 +6,8 @@ Available as a [VS Code extension](https://marketplace.visualstudio.com/items?it
 
 ![Demo Video](./videos/promo.mov)
 
+https://user-images.githubusercontent.com/42815369/172269613-99098670-cd6b-45e2-8c74-4a0e04d61c83.mov
+
 ## Features
 
 This extension has two main features:
