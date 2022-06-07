@@ -3,6 +3,7 @@
   "displayName": "ex-cleanse",
   "description": "A utility that cleans up logs in your Elixir application.",
   "version": "1.0.0",
+  "publisher": "glamboyosa",
   "engines": {
     "vscode": "^1.67.0"
   },
