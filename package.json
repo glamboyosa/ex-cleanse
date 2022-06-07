@@ -2,7 +2,7 @@
   "name": "ex-cleanse",
   "displayName": "ex-cleanse",
   "description": "A utility that cleans up logs in your Elixir application.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "publisher": "glamboyosa",
   "license": "MIT",
   "repository": {
