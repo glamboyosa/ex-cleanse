@@ -4,6 +4,10 @@
   "description": "A utility that cleans up logs in your Elixir application.",
   "version": "1.0.0",
   "publisher": "glamboyosa",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/glamboyosa/ex-cleanse.git"
+  },
   "engines": {
     "vscode": "^1.67.0"
   },
