@@ -1,6 +1,11 @@
 # ex-cleanse
 
-A utility that cleans up logs in your Elixir application.
+A utility that cleans up logs in your Elixir application by [glamboyosa](https://github.com/glamboyosa)
+
+
+
+https://user-images.githubusercontent.com/42815369/172269613-99098670-cd6b-45e2-8c74-4a0e04d61c83.mov
+
 
 ## Features
 
