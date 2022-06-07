@@ -37,8 +37,14 @@ export function activate(context: vscode.ExtensionContext) {
 
       existingArray.push(value);
       context.globalState.update(key, JSON.stringify(existingArray));
+      vscode.window.showInformationMessage(
+        `Successfully added ${value} to your logger list 😄`
+      );
     } else {
       context.globalState.update(key, JSON.stringify([value]));
+      vscode.window.showInformationMessage(
+        `Successfully added ${value} to your logger list 😄`
+      );
     }
   }
   function findLogs(editor: vscode.TextEditor) {
