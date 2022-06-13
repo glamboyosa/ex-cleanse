@@ -95,8 +95,8 @@ export function activate(context: vscode.ExtensionContext) {
     }
   }
 
-  function deleteLogs(logs: vscode.Range[]) {
-    vscode.window.activeTextEditor?.edit((editBuilder) => {
+  function deleteLogs(editor: vscode.TextEditor, logs: vscode.Range[]) {
+    editor.edit((editBuilder) => {
       logs.forEach((range) => {
         editBuilder.delete(range);
       });
@@ -108,7 +108,7 @@ export function activate(context: vscode.ExtensionContext) {
 
     if (editor) {
       const logs = findLogs(editor);
-      deleteLogs(logs);
+      deleteLogs(editor, logs);
     } else {
       vscode.window.showInformationMessage("No editor open.");
     }
