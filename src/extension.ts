@@ -101,7 +101,8 @@ export function activate(context: vscode.ExtensionContext) {
         editBuilder.delete(range);
       });
     });
-    vscode.window.showInformationMessage(`Deleted ${logs.length} logs 🚀`);
+    const lingo = logs.length > 1 ? "logs" : "log";
+    vscode.window.showInformationMessage(`Deleted ${logs.length} ${lingo} 🚀`);
   }
   let disposable = vscode.commands.registerCommand("ex-cleanse.Cleanse", () => {
     const editor = vscode.window.activeTextEditor;

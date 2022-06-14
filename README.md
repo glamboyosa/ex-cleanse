@@ -44,3 +44,7 @@ Initial release of `ex-cleanse`.
 ### 1.0.1
 
 Internal function definiton changes.
+
+### 1.0.2
+
+Improved grammatical accuracy of error message when log deleted is one.
