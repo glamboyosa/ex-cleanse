@@ -76,7 +76,7 @@ export function activate(context: vscode.ExtensionContext) {
       }
       return logs;
     } else {
-      const regex = RegExp("IO.(puts((.*))|inspect((.*)))?", "g");
+      const regex = RegExp("IO.(puts(\(.*\))|inspect(\(.*\)))?", "g");
       let logs: vscode.Range[] = [];
       let match;
       while ((match = regex.exec(text)) !== null) {

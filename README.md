@@ -48,3 +48,7 @@ Internal function definiton changes.
 ### 1.0.2
 
 Improved grammatical accuracy of error message when log deleted is one.
+
+### 1.0.3
+
+Fixed regex definition in default case.
